@@ -8,7 +8,7 @@ async function main() {
 
     // Network information
     const network = hre.ethers.provider.getNetwork();
-    console.log("Network:", network.name);
+    console.log("Network:", (await network).name);
 
     // Deploy the TokenICO contract
     console.log("\nDeploying TokenICO contract...");
