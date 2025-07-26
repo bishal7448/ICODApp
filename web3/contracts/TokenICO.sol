@@ -93,7 +93,7 @@ contract TokenICO {
         if (balance == 0) {
             revert NoTokensToWithdraw();
         }
-        if(! ERC20(tokenAddress).transfer(owner, balance)) {
+        if(!ERC20(tokenAddress).transfer(owner, balance)) {
             revert TokenTransferFailed();
         }
     }
